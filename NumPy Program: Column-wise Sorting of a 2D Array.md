@@ -15,10 +15,7 @@ Step 4:	Use np.insert() to insert the new column into the same position.
 Print the final updated array.
 
 ## PROGRAM
-```
-Name :Pradeep kumar R
-Reg.no : 212223220077
-```
+
 ```
 import numpy as np
 a=np.array(eval(input()))
