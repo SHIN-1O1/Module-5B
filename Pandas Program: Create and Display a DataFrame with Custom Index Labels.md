@@ -14,10 +14,7 @@ Step 5: Display the resulting DataFrame using the print() function or just typin
 
 DataFrame name.
 ## PROGRAM:
-```
-Name : Pradeep kumar R
-Reg.no : 212223220077
-```
+
 ```
 import pandas as pd
 import numpy as np
