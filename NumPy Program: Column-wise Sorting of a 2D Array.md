@@ -1,37 +1,38 @@
-## NumPy: Find Indices Where Elements in Array x are Greater Than or Equal to Corresponding Elements in Array y
+## NumPy: Replace the Second Column in a 2D Array
+## AIM
+To write a NumPy program that deletes the second column from a given 2D array and
+inserts a new column at the same position.
 
-## AIM:
-To write a NumPy program that finds The indices where elements in array x are greater than and equal to their corresponding elements in array y
 ## ALGORITHM
-Step 1:	Import the NumPy library.
+Step 1:	Import Numpy Library.
 
-Step 2:	Define two NumPy arrays, x and y, of the same shape.
+Step 2:	Get 2D Numpy Array and new column value from the user.
 
-Step 3:	Use boolean indexing with comparison operators:
+Step 3:	Use np.delete() to remove the second column from the original array
 
-x > y gives a boolean array where the elements of x are greater than y.
+Step 4:	Use np.insert() to insert the new column into the same position.
 
-x == y gives a boolean array where the elements of x are equal to y.
-
-Step 4:	Use np.where() to get the indices where the conditions are satisfied.
-Print the indices obtained from the comparisons.
+Print the final updated array.
 
 ## PROGRAM
 ```
-Name : Pradeep kumar R
+Name :Pradeep kumar R
 Reg.no : 212223220077
 ```
 ```
 import numpy as np
-x=eval(input())
-y=eval(input())
-l1=np.array(x)
-l2=np.array(y)
-print(np.where(l1>l2))
-print(np.where(l1==l2))
+a=np.array(eval(input()))
+b=np.array(eval(input()))
+print("Printing Original array")
+print(a)
+print("Array after deleting column 2 on axis 1")
+c=np.delete(a,1,axis=1)
+print(c)
+print("Array after inserting column 2 on axis 1")
+print(np.insert(c,1,b,axis=1))
 ```
-## OUTPUT:
-![image](https://github.com/user-attachments/assets/09a89713-9ffe-4acc-a17d-e9586e7e7b32)
+## OUTPUT
+![image](https://github.com/user-attachments/assets/fd85124b-9fea-4904-ba84-f855e964eae2)
 
-## RESULT:
-Thus the python program for element wise comparison between two numpy array has been implemented and executed successfully.
+## RESULT
+Thus the python program for replacing column in numpy has been implemented and executed successfully.
