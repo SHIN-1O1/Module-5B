@@ -14,10 +14,7 @@ To write a Python program using Pandas to join two DataFrames along rows (row-wi
 5.	Display the combined DataFrame using print() or simply calling the DataFrame name.
 
 ## PROGRAM:
-```
-Name : Pradeep kumar R
-Reg.no : 212223220077
-```
+
 ```
 import pandas as pd
 
