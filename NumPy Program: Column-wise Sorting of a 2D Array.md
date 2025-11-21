@@ -1,34 +1,37 @@
-## NumPy: Column-wise Sorting of a 2D Array
+## NumPy: Find Indices Where Elements in Array x are Greater Than or Equal to Corresponding Elements in Array y
+
 ## AIM:
-To write a NumPy program that sorts the elements in each column of a given 2D array in
-ascending order.
+To write a NumPy program that finds The indices where elements in array x are greater than and equal to their corresponding elements in array y
+## ALGORITHM
+Step 1:	Import the NumPy library.
 
-## ALGORITHM:
-Step 1:	Import Numpy Library.
+Step 2:	Define two NumPy arrays, x and y, of the same shape.
 
-Step 2:	Get 2D Numpy Array and new column value from the user.
+Step 3:	Use boolean indexing with comparison operators:
 
-Step 3:	Use the np.sort() function with axis=0 to sort the array column-wise.
+x > y gives a boolean array where the elements of x are greater than y.
 
-Step 4:	Store the result in a new array.
+x == y gives a boolean array where the elements of x are equal to y.
 
-Print the sorted array.
+Step 4:	Use np.where() to get the indices where the conditions are satisfied.
+Print the indices obtained from the comparisons.
 
-## PROGRAM:
+## PROGRAM
 ```
-Name: Pradeep kumar R
-Reg.no: 212223220077
+Name : Pradeep kumar R
+Reg.no : 212223220077
 ```
 ```
 import numpy as np
-a=np.array(eval(input()))
-print("Given array") print(end=" ")
-print(a)
-print()
-print(np.sort(a,axis=0))
+x=eval(input())
+y=eval(input())
+l1=np.array(x)
+l2=np.array(y)
+print(np.where(l1>l2))
+print(np.where(l1==l2))
 ```
 ## OUTPUT:
- ![image](https://github.com/user-attachments/assets/ad73f6e2-2acc-4156-8749-82281a1faf1c)
+![image](https://github.com/user-attachments/assets/09a89713-9ffe-4acc-a17d-e9586e7e7b32)
 
 ## RESULT:
-Thus the python program for sorting each column in numpy has been implemented and executed successfully.
+Thus the python program for element wise comparison between two numpy array has been implemented and executed successfully.
