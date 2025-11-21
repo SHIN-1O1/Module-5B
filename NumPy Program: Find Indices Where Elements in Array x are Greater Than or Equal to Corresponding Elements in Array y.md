@@ -17,10 +17,8 @@ Step 4:	Use np.where() to get the indices where the conditions are satisfied.
 Print the indices obtained from the comparisons.
 
 ## PROGRAM
-```
-Name : Pradeep kumar R
-Reg.no : 212223220077
-```
+
+
 ```
 import numpy as np
 x=eval(input())
